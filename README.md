@@ -1,0 +1,2 @@
+# StaringContest
+Staring Contest app
