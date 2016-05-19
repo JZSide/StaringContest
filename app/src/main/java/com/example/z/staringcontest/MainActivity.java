@@ -20,10 +20,17 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final Button Camera = (Button) findViewById(R.id.camera_btn);
-        Camera.setOnClickListener(new View.OnClickListener(){
+        final Button camera = (Button) findViewById(R.id.camera_btn);
+        camera.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(v.getContext(), CameraActivity.class));
+            }
+        });
+
+        final Button lobby = (Button) findViewById(R.id.lobby_btn);
+        lobby.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(v.getContext(), LobbyActivity.class));
             }
         });
     }
